@@ -7,25 +7,3 @@
   color: #FFF;
   opacity: 1;
 }
-
-.footer {
-  background-color: blue;
-  margin-top: 200px;
-  margin-bottom: 250px;
-  margin-right: 40px;
-  margin-left: 20px;
-  /*      T   - R    - B -  L    */
-  margin: 200px 40px  250px 20px;
-  /*      Y -   X  */
-  margin: 200px 40px;
-  /*      YX  */
-  margin: 40px;
-  /* padding-top: 200px; */
-  padding: 20px;
-
-  border-color: red;
-  border-width: 2px;
-  border-style: solid;
-  border: 2px solid red;
-  text-align: center;
-}
