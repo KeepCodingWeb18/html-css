@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/banner.css">
+    <link rel="stylesheet" href="./styles/header.css">
     <!--
     <style>
       /*
@@ -42,8 +43,8 @@
     -->
   </head>
   <body class="main-bg">
-    <div>
-      <img src="./assets/app/codeflix.png" width="100" alt="">
+    <header class="header">
+      <img src="./assets/app/codeflix.png" alt="">
       <!--
       <ol>
         <li>
@@ -57,31 +58,35 @@
         <li>modelado</li>
       </ol>
       -->
-      <ul>
-        <li>
-          <a href="#title">All shows</a>
-        </li>
-        <li>
-          <a href="./signin.html">Sign in</a>
-          <!-- <a href="https://google.com" target="_blank">google</a> -->
-        </li>
-      </ul>
-    </div>
-    <h1 id="title">codeflix</h1> <!-- h1 solo uno por página. No tiene que ser siempre visible -->
-    <h2>Shows</h2> <!-- No saltar niveles! -->
-    <h3>heading 3</h3>
-    <hr>
-    <div class="banner">
-      <div class="image"></div>
-      <div class="content">
-        <p class="heading-1">Unlimited movies, TV shows, and more</p>
-        <p class="heading-2">Watch anywhere. Cancel anytime</p>
-        <p>Ready to watch?</p>
-      </div>
-    </div>
-    <p class="white-bg purple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, labore. Aliquam magnam consectetur a illum amet optio inventore ea quidem, ab placeat error unde fugiat, excepturi aliquid doloribus aperiam ullam.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur officiis at iusto deserunt quidem dolore? Doloremque voluptates consequatur quia officia officiis, amet veniam harum, sit error quisquam fugiat earum!</p>
-    <p class="white-bg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum nisi suscipit libero, harum quo labore rerum laudantium tenetur aperiam <strong>a debitis minima sapiente</strong> veniam ab odio ullam <em>expedita officia!</em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel error esse similique libero vero ad at provident repellendus <a href="test.html">consequuntur</a> quas minus rem quod sapiente dolore, harum sint magnam iusto quaerat?</p>
+      <nav class="nav">
+        <ul class="list">
+          <li>
+            <a href="#title">All shows</a>
+          </li>
+          <li>
+            <a href="./signin.html">Sign in</a>
+            <!-- <a href="https://google.com" target="_blank">google</a> -->
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 id="title">codeflix</h1> <!-- h1 solo uno por página. No tiene que ser siempre visible -->
+      <h2>Shows</h2> <!-- No saltar niveles! -->
+      <h3>heading 3</h3>
+      <hr>
+      <section class="banner">
+        <div class="image"></div>
+        <div class="content">
+          <p class="heading-1">Unlimited movies, TV shows, and more</p>
+          <p class="heading-2">Watch anywhere. Cancel anytime</p>
+          <p>Ready to watch?</p>
+        </div>
+      </section>
+      <p class="white-bg purple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, labore. Aliquam magnam consectetur a illum amet optio inventore ea quidem, ab placeat error unde fugiat, excepturi aliquid doloribus aperiam ullam.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur officiis at iusto deserunt quidem dolore? Doloremque voluptates consequatur quia officia officiis, amet veniam harum, sit error quisquam fugiat earum!</p>
+      <p class="white-bg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum nisi suscipit libero, harum quo labore rerum laudantium tenetur aperiam <strong>a debitis minima sapiente</strong> veniam ab odio ullam <em>expedita officia!</em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel error esse similique libero vero ad at provident repellendus <a href="test.html">consequuntur</a> quas minus rem quod sapiente dolore, harum sint magnam iusto quaerat?</p>
+    </main>
     <footer class="footer">
       <p>2024 <strong>Codeflix</strong>. All rights reserved.</p>
     </footer>

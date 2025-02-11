@@ -1,0 +1,31 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color);
+  z-index: 999;
+  img {
+    width: 20%;
+    max-width: 230px;
+    min-width: 200px;
+  }
+  /*
+  .nav {
+    .list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .nav .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  */
+}
+
+.header .nav .list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
