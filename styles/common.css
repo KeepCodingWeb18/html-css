@@ -1,9 +1,21 @@
+:root {
+  --bg-color: #000;
+  --main-text-color: #FFF;
+  --main-brand-color: #e50914;
+  --main-brand-color-light: #e44c54;
+  --border-color: #4b5563;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .main-bg {
   background-color: black;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 1);
+  background-color: var(--bg-color);
   color: white;
   color: #ffffff;
   color: #FFF;
+  color: var(--main-text-color);
   opacity: 1;
 }

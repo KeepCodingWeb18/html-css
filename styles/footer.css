@@ -1,21 +1,53 @@
+/*
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-size: 12px;
+}
+*/
+/*
 .footer {
   background-color: blue;
   margin-top: 200px;
   margin-bottom: 250px;
   margin-right: 40px;
   margin-left: 20px;
-  /*      T   - R    - B -  L    */
+  /*      T   - R    - B -  L    
   margin: 200px 40px  250px 20px;
-  /*      Y -   X  */
+  /*      Y -   X  
   margin: 200px 40px;
-  /*      YX  */
+  /*      YX  
   margin: 40px;
-  /* padding-top: 200px; */
-  padding: 20px;
+  /* padding-top: 200px; 
+  padding: 1rem;
 
   border-color: red;
   border-width: 2px;
   border-style: solid;
   border: 2px solid red;
   text-align: center;
+
+  /* 1rem -> 16px 
+  font-size: 1em;
+  /* font-size: 16px; 
+  font-weight: 400;
+  /* text-transform: uppercase;
+  strong {
+    font-size: 1.005rem;
+  }
+}
+*/
+/*
+.footer strong {
+  font-size: 1.005rem;
+}
+*/
+.footer {
+  text-align: center;
+  font-weight: 100;
+  font-style: italic;
+  padding: 2em 0;
 }
