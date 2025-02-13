@@ -49,5 +49,6 @@ body {
   text-align: center;
   font-weight: 100;
   font-style: italic;
-  padding: 2em 0;
+  padding: 2em;
+  width: 500px;
 }
