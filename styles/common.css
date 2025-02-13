@@ -37,3 +37,28 @@ a.hide {
   display: none;
   /* visibility: hidden;*/
 }
+/*@media screen and (min-width: 768px) {*/
+@media screen and (width > 768px) {
+  a.hide {
+    display: block;
+  }
+}
+
+@media print {
+  /*
+  body header.header {
+    display: none;
+  }
+  body footer.footer {
+    display: none;
+  }
+  body section.banner {
+    display: none;
+  }
+  */
+  body {
+    header.header, footer.footer, section.banner, video, img {
+      display: none;
+    }
+  }
+}
