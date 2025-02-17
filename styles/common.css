@@ -28,6 +28,10 @@ a {
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, p {
+  margin-top: 0;
+}
+
 p {
   margin: 0;
   margin-bottom: 1rem;
@@ -37,8 +41,9 @@ a.hide {
   display: none;
   /* visibility: hidden;*/
 }
+
 /*@media screen and (min-width: 768px) {*/
-@media screen and (width > 768px) {
+@media screen and (width > 768px) { /* breakpoints */
   a.hide {
     display: block;
   }
@@ -62,3 +67,12 @@ a.hide {
     }
   }
 }
+
+/*
+@media screen and (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #FFF;
+    --main-text-color: #000;
+  }
+}
+*/
