@@ -6,7 +6,67 @@
   <title>Codeflix | signin</title>
 </head>
 <body>
-  <h1>Codeflix sinin.html</h1>
-  <a href="./">Home</a>
+  <h1>sinin.html</h1>
+  <form action="./registro" method="post">
+    <div>
+      <label for="mail">Add your email</label>
+      <!-- 1. type, 2.name, 3.id -->
+      <input type="email" name="email" id="mail" autocomplete="off" value="test@test.com">
+    </div>
+    <div>
+      <label for="password">Add your password</label>
+      <input type="password" name="password" id="password" placeholder="add your password">
+    </div>
+    <div>
+      <label for="tel">Enter you phone number</label>
+      <input type="tel" name="telephone" id="tel" autocomplete="off">
+      <!-- <input type="number" step="100" name="telephone" id="tel" autocomplete="off"> -->
+    </div>
+    <div>
+      <label for="profile">Choose a profile picture</label>
+      <input type="file" name="profile" id="profile" accept="image/png">
+    </div>
+    <fieldset>
+      <legend>Fav programming language</legend>
+      <label for="js">JS</label>
+      <input type="radio" name="fav" id="js" value="js" checked>
+      <label for="python">Python</label>
+      <input type="radio" name="fav" id="python" value="python">
+    </fieldset>
+    <!--
+    <fieldset>
+      <legend>Want to learn</legend>
+      <label for="jsc">JS</label>
+      <input type="checkbox" name="learn" id="jsc" value="js">
+      <label for="pythonc">Python</label>
+      <input type="checkbox" name="learn" id="pythonc" value="python">
+      <label for="netc">.Net</label>
+      <input type="checkbox" name="learn" id="netc" value="net">
+    </fieldset>
+    -->
+    <div>
+      <label for="bio">User bio</label>
+      <textarea name="bio" id="bio" rows="6" placeholder="Add your bio"></textarea>
+    </div>
+    <button type="button">click</button>
+    <div>
+      <label for="remember">Remember me</label>
+      <input type="checkbox" name="remember" id="remember">
+    </div>
+    <div>
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <option value="es">España</option>
+        <option value="co">Colombia</option>
+        <option value="us" selected>Usa</option>
+      </select>
+    </div>
+    <div>
+      <input type="reset" value="Reset">
+      <button type="submit">
+        Guardar
+      </button>
+    </div>
+  </form>
 </body>
 </html>
