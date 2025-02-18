@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Codeflix | signin</title>
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/components.css">
+  <link rel="stylesheet" href="./styles/signin.css">
 </head>
-<body>
-  <h1>sinin.html</h1>
-  <form action="./registro" method="post">
-    <div>
-      <label for="mail">Add your email</label>
-      <!-- 1. type, 2.name, 3.id -->
-      <input type="email" name="email" id="mail" autocomplete="off" value="test@test.com">
-    </div>
-    <div>
-      <label for="password">Add your password</label>
-      <input type="password" name="password" id="password" placeholder="add your password">
-    </div>
-    <div>
-      <label for="tel">Enter you phone number</label>
-      <input type="tel" name="telephone" id="tel" autocomplete="off">
-      <!-- <input type="number" step="100" name="telephone" id="tel" autocomplete="off"> -->
-    </div>
-    <div>
-      <label for="profile">Choose a profile picture</label>
-      <input type="file" name="profile" id="profile" accept="image/png">
-    </div>
-    <fieldset>
-      <legend>Fav programming language</legend>
-      <label for="js">JS</label>
-      <input type="radio" name="fav" id="js" value="js" checked>
-      <label for="python">Python</label>
-      <input type="radio" name="fav" id="python" value="python">
-    </fieldset>
-    <!--
+<body class="main-bg container">
+  <main class="card">
+    <h1>Sign in</h1>
+    <form action="./registro" method="post" novalidate>
+      <div class="form-element">
+        <label for="mail">Add your email</label>
+        <!-- 1. type, 2.name, 3.id -->
+        <input required type="email" name="email" id="mail" readonly autocomplete="off" value="test@test.com">
+      </div>
+      <div class="form-element">
+        <label for="password">Add your password</label>
+        <input required type="password" name="password" id="password" placeholder="add your password">
+      </div>
+      <div class="form-element">
+        <label for="tel">Enter you phone number</label>
+        <input required type="tel" name="telephone" id="tel" autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          title="Expected format 123-123-1234">
+        <!-- <input type="number" step="100" name="telephone" id="tel" autocomplete="off"> -->
+      </div>
+      <div class="file-element">
+        <label for="profile">Choose a profile picture</label>
+        <input required type="file" name="profile" id="profile" accept="image/png">
+      </div>
+      <fieldset>
+        <legend>Fav programming language</legend>
+        <label for="js">JS</label>
+        <input required type="radio" name="fav" id="js" value="js" checked>
+        <label for="python">Python</label>
+        <input required type="radio" name="fav" id="python" value="python">
+      </fieldset>
+      <!--
     <fieldset>
       <legend>Want to learn</legend>
       <label for="jsc">JS</label>
@@ -44,29 +51,30 @@
       <input type="checkbox" name="learn" id="netc" value="net">
     </fieldset>
     -->
-    <div>
-      <label for="bio">User bio</label>
-      <textarea name="bio" id="bio" rows="6" placeholder="Add your bio"></textarea>
-    </div>
-    <button type="button">click</button>
-    <div>
-      <label for="remember">Remember me</label>
-      <input type="checkbox" name="remember" id="remember">
-    </div>
-    <div>
-      <label for="country">Country</label>
-      <select name="country" id="country">
-        <option value="es">España</option>
-        <option value="co">Colombia</option>
-        <option value="us" selected>Usa</option>
-      </select>
-    </div>
-    <div>
-      <input type="reset" value="Reset">
-      <button type="submit">
-        Guardar
-      </button>
-    </div>
-  </form>
+      <div class="form-element">
+        <label for="bio">User bio</label>
+        <textarea required name="bio" id="bio" rows="6" placeholder="Add your bio. Max 100" maxlength="100"></textarea>
+      </div>
+      <!-- <button type="button">click</button> -->
+      <div class="form-element row">
+        <label for="remember">Remember me</label>
+        <input type="checkbox" name="remember" id="remember">
+      </div>
+      <div class="form-element">
+        <label for="country">Country</label>
+        <select required name="country" id="country">
+          <option value="es">España</option>
+          <option value="co">Colombia</option>
+          <option value="us" selected>Usa</option>
+        </select>
+      </div>
+      <div>
+        <input class="btn" type="reset" value="Reset">
+        <button class="btn" type="submit">
+          Guardar
+        </button>
+      </div>
+    </form>
+  </main>
 </body>
 </html>
