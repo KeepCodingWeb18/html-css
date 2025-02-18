@@ -13,6 +13,18 @@
   }
 }
 
+@media screen and (hover: hover) {
+  .btn {
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: var(--main-brand-color-light);
+  }
+  .btn.secondary:hover {
+    background-color: transparent;
+  }
+}
+
 /* texts */
 .heading-1 {
   font-size: 1.5rem;
