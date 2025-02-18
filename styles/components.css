@@ -6,6 +6,11 @@
   padding: 0.7rem;
   display: inline-block;
   border-radius: 5px;
+  border: 1px solid var(--main-brand-color);
+  &.secondary {
+    background-color: transparent;
+    border: 1px solid var(--main-text-color);
+  }
 }
 
 /* texts */
@@ -17,3 +22,52 @@
 .heading-2 {
   font-weight: 700;
 }
+
+/*
+::placeholder {
+  color: red;
+}
+*/
+.form-element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  label {
+    margin-bottom: 0.5rem;
+  }
+  input, textarea, select {
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--input-bg-color);
+    color: var(--main-text-color);
+  }
+  &.row {
+    flex-direction: row;
+    gap: 10px;
+    label {
+      margin: 0;
+    }
+  }
+}
+
+.file-element {
+  margin-bottom: 1rem;
+  label {
+    display: block;
+    background-color: var(--input-bg-color);
+    color: var(--main-text-color);
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  input[type="file"] {
+    display: none;
+  }
+}
+
+/*
+.form-element.row {
+  flex-direction: row;
+}
+*/
+
