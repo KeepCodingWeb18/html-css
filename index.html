@@ -117,13 +117,33 @@
           }
         }
       }
-      ul li {
+      ul.list-example > li {
+        border-bottom: 1px solid white;
+      }
+      input ~ label {
         color: red;
+      }
+      ul.list-example {
+        & > li {
+          border-bottom: 1px solid white;
+        }
+      }
+      input {
+        & ~ label {
+          color: red;
+        }
+      }
+      ul.list-example > li:nth-child(2) {
+        background-color: blue;
       }
     </style>
   </head>
   <body class="main-bg">
-    <ul>
+    <input type="text" id="test">
+    <div>prueba</div>
+    <label for="test">Test</label>
+
+    <ul class="list-example">
       <li>Example 1
         <ul>
           <li>Item 1</li>
