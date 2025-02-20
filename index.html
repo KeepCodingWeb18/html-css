@@ -63,7 +63,7 @@
         animation-iteration-count: 3;
         */
       }
-      @media screen and (prefers-reduced-motion: no-preference) {  
+      @media screen and (prefers-reduced-motion: no-preference) {
         @keyframes spinner {
           0% {
             transform: rotate(0);
@@ -90,9 +90,37 @@
           opacity: 1;
         }
       }
+      .progress {
+        height: 20px;
+        width: 20px;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        background-color: red;
+        display: none;
+      }
+      @media screen and (prefers-reduced-motion: no-preference) {
+        @supports (animation-timeline: scroll()) {
+          .progress {
+            display: block;
+            animation: progress 4s linear;
+            animation-fill-mode: forwards;
+            animation-timeline: scroll();
+          }
+        }
+        @keyframes progress {
+          0% {
+            width: 0;
+          }
+          100% {
+            width: 100%;
+          }
+        }
+      }
     </style>
   </head>
   <body class="main-bg">
+    <div class="progress"></div>
     <div class="spinner"></div>
     <h1 class="sr-only">Codeflix</h1>
     <header class="header">
