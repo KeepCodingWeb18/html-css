@@ -7,6 +7,13 @@
   display: inline-block;
   border-radius: 5px;
   border: 1px solid var(--main-brand-color);
+  /*
+  transition-property: background-color;
+  transition-duration: 10s;
+  width: 73px;
+  height: 43px;
+  */
+  transition: all 0.3s linear;
   &.secondary {
     background-color: transparent;
     border: 1px solid var(--main-text-color);
@@ -19,6 +26,11 @@
   }
   .btn:hover {
     background-color: var(--main-brand-color-light);
+  }
+  .btn.error {
+    width: 100px;
+    height: 50px;
+    background-color: red;
   }
   .btn.secondary:hover {
     background-color: transparent;
