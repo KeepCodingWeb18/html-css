@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    img {
+      width: 100%;
+    }
+    .catalog {
+      background-color: aqua;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      object-position: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- 1. posiciones -->
+  <!-- <img class="catalog" src="./assets/app/catalog.jpg" alt=""> -->
+  <!-- 2. picture -->
+  <picture>
+    <source srcset="./assets/responsive-images/dog_large.jpg" media="(width > 1200px)">
+    <source srcset="./assets/responsive-images/dog_medium.jpg" media="(min-width: 800px)">
+    <source srcset="./assets/responsive-images/dog_small.jpg">
+    <img src="./assets/responsive-images/dog_large.jpg" alt="">
+  </picture>
+  <!-- 3. srcset -->
+   <img
+    src="./assets/responsive-images/dog_c_scalew_1089.jpg"
+    srcset="./assets/responsive-images/dog_c_scalew_591.jpg 591w,
+    ./assets/responsive-images/dog_c_scalew_1089.jpg 1089w,
+    ./assets/responsive-images/dog_c_scalew_1352.jpg 1352w
+    "
+  >
+</body>
+</html>
